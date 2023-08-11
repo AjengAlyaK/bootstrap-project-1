@@ -41,18 +41,33 @@
     </nav>
 
     <!-- breadcrumb -->
-    <div class="container-fluid py-5">
+    <div class="container-fluid pt-5">
         <div class="container pt-5">
-            <nav aria-label="breadcrumb">
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">Produk</a></li>
-                    <li class="breadcrumb-item"><a href="#">Western</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">French Fries</li>
+                    <li class="breadcrumb-item"><a href="product.html" style="text-decoration:none">Produk</a></li>
+                    <li class="breadcrumb-item">Western</li>
+                    <li class="breadcrumb-item active">French Fries</li>
                 </ol>
             </nav>
         </div>
     </div>
 
+    <!-- main -->
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <!-- product image -->
+                <div class="col-lg-4">
+                    <img src="image/product/french-fries.jpg" class="img-fluid" alt="">
+                </div>
+                <!-- product detail -->
+                <div class="col-lg-7 offset-lg-1">
+                    <h1>French Fries</h1>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="bootstrap-5.0.0-dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
