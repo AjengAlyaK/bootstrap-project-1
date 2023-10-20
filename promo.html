@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
     <!-- lightbox -->
     <link rel="stylesheet" href="dist/css/lightbox.min.css">
 </head>
+
 <body>
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark main-color fixed-top">
@@ -48,22 +50,54 @@
     <!-- promo -->
     <div class="container-fluid py-5">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-sm-4 col-md-3 col-lg-2">
+            <!-- kategori promo -->
+            <div class="row justify-content-center mb-5">
+                <div class="col-sm-4 col-md-3 col-lg-2 mb-3">
                     <button class="btn btn-outline-warning w-100 fs-5 active">Semua Promo</button>
                 </div>
-                <div class="col-sm-4 col-md-3 col-lg-2">
+                <div class="col-sm-4 col-md-3 col-lg-2 mb-3">
                     <button class="btn btn-outline-warning w-100 fs-5">Promo Diskon</button>
                 </div>
-                <div class="col-sm-4 col-md-3 col-lg-2">
+                <div class="col-sm-4 col-md-3 col-lg-2 mb-3">
                     <button class="btn btn-outline-warning w-100 fs-5">Promo Bonus</button>
                 </div>
             </div>
         </div>
+
+        <!-- isi promo -->
+        <div id="semuaPromo">
+            <div class="row">
+                <div class="col-sm-6 col-lg-3 hovered-card mb-3">
+                    <div class="card">
+                        <a href="image/product/chocolate-mousse.jpg" data-lightbox="chocolate mouse" data-title="chocolate mouse">
+                            <img src="image/product/thumb/chocolate-mousse.jpg" class="card-img-top" alt="...">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Beli 1 Gratis 1</h5>
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate,
+                                ab.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 hovered-card mb-3">
+                    <div class="card">
+                        <img src="image/product/thumb/coffee.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Gratis Capucinno</h5>
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate,
+                                ab.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="promoDiskon"></div>
+        <div id="promoBonus"></div>
     </div>
 
     <script src="bootstrap-5.0.0-dist/js/bootstrap.bundle.min.js"></script>
     <!-- lightbox -->
     <script src="dist/js/lightbox-plus-jquery.min.js"></script>
 </body>
+
 </html>
